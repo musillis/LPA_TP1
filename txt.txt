@@ -1,0 +1,218 @@
+Microsoft Windows [Versión 10.0.22621.1265]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\sebas>cd Desktop
+
+C:\Users\sebas\Desktop>cd Actividad
+
+C:\Users\sebas\Desktop\Actividad>git init
+Initialized empty Git repository in C:/Users/sebas/Desktop/Actividad/.git/
+
+C:\Users\sebas\Desktop\Actividad>git remote add origin git@github.com:musillis/ActividadLPPA.git
+
+C:\Users\sebas\Desktop\Actividad>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\sebas\Desktop\Actividad>git add .
+
+C:\Users\sebas\Desktop\Actividad>git commit -m "Archivo Readme"
+[master (root-commit) f43baa3] Archivo Readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Readme.txt
+
+C:\Users\sebas\Desktop\Actividad>git push origin master
+The authenticity of host 'github.com (20.201.28.151)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\sebas\Desktop\Actividad>git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:musillis/ActividadLPPA.git'
+
+C:\Users\sebas\Desktop\Actividad>git config --global user.name "musillis"
+
+C:\Users\sebas\Desktop\Actividad>git login
+git: 'login' is not a git command. See 'git --help'.
+
+The most similar command is
+        column
+
+C:\Users\sebas\Desktop\Actividad>git config --global user.mail "sebastianmusilli1142@gmail.com"
+
+C:\Users\sebas\Desktop\Actividad>git config -- global user.mail sebastianmusilli1142@gmail.com
+error: key does not contain a section: global
+
+C:\Users\sebas\Desktop\Actividad>git config --global user.mail "sebastianmusilli1142@gmail.com"
+
+C:\Users\sebas\Desktop\Actividad>git config --global user.mail "sebastianmusilli1142@gmail.com"
+
+C:\Users\sebas\Desktop\Actividad>git config --global user.mail "sebastianmusilli1142@gmail.com"
+
+C:\Users\sebas\Desktop\Actividad>
+C:\Users\sebas\Desktop\Actividad>git config --global user.name "musillis"
+
+C:\Users\sebas\Desktop\Actividad>git config --global user.mail "sebastian.musilli@alumnos.uai.edu.ar"
+
+C:\Users\sebas\Desktop\Actividad>git login
+git: 'login' is not a git command. See 'git --help'.
+
+The most similar command is
+        column
+
+C:\Users\sebas\Desktop\Actividad>git --login
+unknown option: --login
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+C:\Users\sebas\Desktop\Actividad>git config user.mail
+sebastian.musilli@alumnos.uai.edu.ar
+
+C:\Users\sebas\Desktop\Actividad>git config user.name
+musillis
+aa
+C:\Users\sebas\Desktop\Actividad>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\sebas\Desktop\Actividad>git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:musillis/ActividadLPPA.git'
+
+C:\Users\sebas\Desktop\Actividad>git push origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\sebas\Desktop\Actividad>git remote remove origin
+
+C:\Users\sebas\Desktop\Actividad>git remote add origin https://github.com/musillis/LPA_TP1.git
+
+C:\Users\sebas\Desktop\Actividad>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\sebas\Desktop\Actividad>git add .
+
+C:\Users\sebas\Desktop\Actividad>git commit -m "Creacion de archivo Readme"
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\sebas\Desktop\Actividad>git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/musillis/LPA_TP1.git'
+
+C:\Users\sebas\Desktop\Actividad>git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 238 bytes | 238.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/musillis/LPA_TP1.git
+ * [new branch]      master -> master
+
+C:\Users\sebas\Desktop\Actividad>git branch
+* master
+
+C:\Users\sebas\Desktop\Actividad>git branch editar
+
+C:\Users\sebas\Desktop\Actividad>git checkout editar
+Switched to branch 'editar'
+
+C:\Users\sebas\Desktop\Actividad>git status
+On branch editar
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\sebas\Desktop\Actividad>git add .
+
+C:\Users\sebas\Desktop\Actividad>git commit -m "Cambios en Readme"
+[editar cc7848c] Cambios en Readme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\sebas\Desktop\Actividad>git push origin editar
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 285 bytes | 142.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'editar' on GitHub by visiting:
+remote:      https://github.com/musillis/LPA_TP1/pull/new/editar
+remote:
+To https://github.com/musillis/LPA_TP1.git
+ * [new branch]      editar -> editar
+
+C:\Users\sebas\Desktop\Actividad>git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+C:\Users\sebas\Desktop\Actividad>git checkout master
+Switched to branch 'master'
+
+C:\Users\sebas\Desktop\Actividad>git merge editar
+Updating f43baa3..cc7848c
+Fast-forward
+ Readme.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\sebas\Desktop\Actividad>git add .
+
+C:\Users\sebas\Desktop\Actividad>git commit -m "Mergear ramas"
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\sebas\Desktop\Actividad>git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/musillis/LPA_TP1.git
+   f43baa3..cc7848c  master -> master
+
+C:\Users\sebas\Desktop\Actividad>print Desktop
+No se puede inicializar el dispositivo PRN
+
+C:\Users\sebas\Desktop\Actividad>dir /b txt.txt
+No se encuentra el archivo
+
+C:\Users\sebas\Desktop\Actividad>dir C:\Users\sebas\Desktop\Actividad\txt.txt
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: 575D-F230
+
+ Directorio de C:\Users\sebas\Desktop\Actividad
+
+No se encuentra el archivo
+
+C:\Users\sebas\Desktop\Actividad>dir > txt.txt
+
+C:\Users\sebas\Desktop\Actividad>dir > txt.txt
+ El volumen de la unidad C es Windows
+ El n£mero de serie del volumen es: 575D-F230
+
+ Directorio de C:\Users\sebas\Desktop\Actividad
+
+17/04/2023  10:05    <DIR>          .
+17/04/2023  09:45    <DIR>          ..
+17/04/2023  10:01                31 Readme.txt
+17/04/2023  10:05                 0 txt.txt
+               2 archivos             31 bytes
+               2 dirs  99.118.501.888 bytes libres
