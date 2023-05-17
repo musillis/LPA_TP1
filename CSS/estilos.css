@@ -1,3 +1,10 @@
+.ContenedorPrincipal{
+
+   width: 100%;
+   max-width: 1000px;
+  
+}
+
 section {
     font-size: large;
     font-style: normal;
@@ -14,14 +21,45 @@ img
 
 .noticia
 {
+    width: 70%;
     font-size: medium;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
 }
 
 .contenedor-imagen-central img {
     width: 700px;
     height: 500px;
 }
+
+@media screen and (max-width: 800px) 
+{
+  body{
+    background: #ff8000;
+  }
+
+  .noticia{
+    width: 100%;
+  }
+
+  .contenedor-imagen-central
+  {
+    width: 100%;
+  }
+  }
+
+
+  @media screen and (max-width: 400px)
+  {
+.ContenedorPrincipal{
+    width: 100%;
+}
+
+.contenedor-imagen-central
+{
+display: none;
+}
+  }
 
 
