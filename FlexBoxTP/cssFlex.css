@@ -67,7 +67,7 @@
     }
 
     @media screen and (max-width: 600px) {
-        .columna.izq, .columna.columna.central, .columna.derecha {
+        .columna.izq, .columna.central, .columna.derecha {
           width: 100%;
         }
     }
