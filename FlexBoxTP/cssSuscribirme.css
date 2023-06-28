@@ -1,0 +1,28 @@
+.header{
+    text-align: center;
+}
+
+.contenedor_1 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor_2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+.contenedor_2
+{
+    float: right;
+}
+
+    .contenedor_1, .contenedor_2{
+      width: 50%;
+    }
+}
